@@ -10,7 +10,7 @@ export default class ChromeBoisDomain extends Component {
       drawChromeBoiAtCoords(x, y)
   }
   
-  handleToggle = () => {
+  handleClick = () => {
     toggleCycling()
   }
 
@@ -22,7 +22,7 @@ export default class ChromeBoisDomain extends Component {
   render() {
     return (
       <canvas 
-        onClick={this.handleToggle}
+        onClick={this.handleClick}
         onMouseMove={this.handleMouseMove}
         onKeyPress={this.handleKeyPress}
         width='900'
